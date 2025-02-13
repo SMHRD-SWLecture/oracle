@@ -86,3 +86,5 @@ CREATE TABLE 네이버회원 (
     생년월일 DATE,
     성별 VARCHAR2(3) CHECK(성별 IN ('남', '여'))
     );
+    
+    
