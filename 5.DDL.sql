@@ -17,9 +17,6 @@ CREATE TABLE 직원(
 
 DROP TABLE 직원;
 
-
-
-
 -- 실습! DEPARTMENTS 테이블을 부서 테이블이라는 한글 VER 테이블로 만들기
 -- DEPARTMENT_ID -> 부서ID
 -- DEPARTMENT_NAME -> 부서이름
