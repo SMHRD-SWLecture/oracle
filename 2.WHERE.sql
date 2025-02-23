@@ -34,18 +34,18 @@ SELECT EMPLOYEE_ID, DEPARTMENT_ID
 -- 실습1) 직원 테이블에서 (EMPLOYEES) 급여가 (SALARY) 가 5000 이하인 
 --       사람들의 이름(LAST_NAME)과 급여(SALARY)를 출력하시오.
 
-SELECT LAST_NAME, SALARY 
-  FROM EMPLOYEES 
+SELECT LAST_NAME, SALARY
+  FROM EMPLOYEES
  WHERE SALARY <= 5000;
 
--- 실습2) 직원 테이블에서 (EMPLOYEES) ★연봉★이 50000 이상인 사람들의
+-- 실습2) 직원 테이블에서 (EMPLOYEES) ★연봉★이 5000 이상인 사람들의
 --      이름과 (LAST_NAME)과 연봉을 출력하시오, 
 --      이 때 연봉은 'ANNSAL' 라는 별칭과 함께 출력하시오. 
-  
-SELECT LAST_NAME, SALARY*12 AS ANNSAL 
-  FROM EMPLOYEES 
- WHERE SALARY*12 >= 50000;
-  
+
+SELECT LAST_NAME, SALARY AS ANNSAL
+  FROM EMPLOYEES
+ WHERE SALARY >= 5000;
+
 -- 비교연산자는 =, >=, <=, <, > 사용 가능 
 
 -- 4. 등가비교연산자 
@@ -73,9 +73,9 @@ SELECT *
 --1) EMPLOYEES 테이블에서 JOB_ID가 IT_PROG가 아닌 직원의 LAST_NAME과
 --  JOB_ID를 출력하시오. 
 
-SELECT LAST_NAME,JOB_ID
+SELECT LAST_NAME, JOB_ID
   FROM EMPLOYEES
- WHERE JOB_ID <> 'IT_PROG';
+ WHERE JOB_ID ^= IT_PROG;
 
 
 -- 2) 급여가 10000 미만이 아닌 직원의 EMPLOYEE_ID와
@@ -346,4 +346,3 @@ SELECT EMPLOYEE_ID , FIRST_NAME , HIRE_DATE , SALARY
     FROM EMPLOYEES
 WHERE DEPARTMENT_ID = 80
     AND TO_CHAR(HIRE_DATE, 'YYYY') = '2005';
-

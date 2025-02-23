@@ -37,7 +37,7 @@ SELECT 학생ID, ROUND(AVG(성적)) AS 평균성적
     FROM 성적표
  WHERE 과목 <> 'PYTHON'
  GROUP BY 학생 ID
- HAVING AVG(성적) >= 80;
+  HAVING AVG(성적) >= 80;
  
 /********************** ORDER BY ************************/
 
@@ -56,6 +56,5 @@ SELECT SALARY*12 AS 연봉
  -- 실습1) 교육생 정보 테이블에서 소속된 팀의 인원수가 3명 이상인 팀의 이름과 인원수를 출력하시오.
  
  -- EMPLOYEES 테이블에서 부서별 최고 연봉이 100,0000 이상인 부서의 ID와 최고 연봉을 출력하세요.
- 
 
 
