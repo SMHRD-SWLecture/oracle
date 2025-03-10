@@ -68,5 +68,5 @@ UPDATE 직원
 DELETE FROM 직원;
 
 -- 특정 행만 삭제
-DELETE FㄴROM 직원
+DELETE FROM 직원
  WHERE 직원ID = 2;
